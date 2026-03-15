@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harvey A. · Game &amp; Systems Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div id="boot">
+  <div class="boot-inner">
+    <div class="boot-line" id="bl1"></div>
+    <div class="boot-line" id="bl2"></div>
+    <div class="boot-line" id="bl3"></div>
+    <div class="boot-line" id="bl4"></div>
+    <div class="boot-line boot-ready" id="bl5"></div>
+  </div>
+</div>
+
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<canvas id="particle-canvas"></canvas>
+
+<div id="progress-bar"></div>
+
+<nav id="sidebar">
+  <a href="#hero" class="sidebar-dot active" data-label="HOME"></a>
+  <a href="#skills" class="sidebar-dot" data-label="01 SKILLS"></a>
+  <a href="#level-design" class="sidebar-dot" data-label="02 LEVELS"></a>
+  <a href="#unity" class="sidebar-dot" data-label="03 UNITY"></a>
+  <a href="#api" class="sidebar-dot" data-label="04 API / WEB"></a>
+  <a href="#vr" class="sidebar-dot" data-label="05 VR / XR"></a>
+  <a href="#experience" class="sidebar-dot" data-label="06 EXPERIENCE"></a>
+  <a href="#contact" class="sidebar-dot" data-label="07 CONTACT"></a>
+</nav>
+
+<div id="hud">
+  <span id="hud-section">HOME</span>
+  <span id="hud-center">HARVEY A. / 2026</span>
+  <a href="#contact" id="hud-right">OPEN TO HIRE</a>
+</div>
+
+<main id="main-content">
+
+  <section id="hero">
+    <div class="hero-bg-word" aria-hidden="true">DEVELOPER</div>
+    <div class="hero-inner">
+      <div class="hero-name-block">
+        <span class="hero-first" id="scramble-target" data-final="HARVEY">HARVEY</span>
+        <span class="hero-last">A.</span>
+      </div>
+      <div class="hero-rule"></div>
+      <div class="hero-meta">
+        <div class="hero-role-line">
+          <span class="hero-role">GAME &amp; SYSTEMS DEVELOPER</span>
+          <span class="hero-year">2026</span>
+        </div>
+        <div class="hero-badges">
+          <span class="badge badge-green">OPEN TO WORK</span>
+          <span class="badge badge-cyan">PART-TIME / SCHOOL</span>
+          <span class="badge badge-dim">UNITY · XR · API · WEB</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#experience" class="cta-primary">VIEW EXPERIENCE</a>
+        <a href="#contact" class="cta-secondary">GET IN TOUCH</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-bar"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <section id="skills" data-section="01 SKILLS">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-block">
+        <div class="skill-label">UNITY / C#</div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="92"></div></div>
+        <div class="skill-tags">
+          <span>Physics Systems</span><span>State Machines</span><span>Event Architecture</span><span>Performance</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-label">VR / XR DEVELOPMENT</div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88"></div></div>
+        <div class="skill-tags">
+          <span>Meta Quest</span><span>XR Toolkit</span><span>Hand Tracking</span><span>Spatial UI</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-label">LEVEL DESIGN</div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
+        <div class="skill-tags">
+          <span>3D Layout</span><span>Player Flow</span><span>ProBuilder</span><span>Lighting</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-label">API / TYPESCRIPT</div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div>
+        <div class="skill-tags">
+          <span>Supabase</span><span>REST</span><span>PostgreSQL</span><span>Auth Systems</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-label">WEB DEVELOPMENT</div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div>
+        <div class="skill-tags">
+          <span>HTML / CSS / JS</span><span>Semantic</span><span>Canvas API</span><span>Animation</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-label">PROJECT MANAGEMENT</div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div>
+        <div class="skill-tags">
+          <span>Agile / Sprints</span><span>Leadership</span><span>Cross-team</span><span>Networking</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="level-design" data-section="02 LEVELS">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>Level Design</h2>
+    </div>
+    <p class="section-desc">AIRBALL | Unity 3D project built around momentum-based movement, spatial puzzle design, and tight player flow. Each layout is engineered around readability and emergent challenge.</p>
+    <div class="gallery-mosaic" id="gallery">
+      <div class="gm-item gm-large" onclick="openLightbox('assets/Airball Showcase1.png', 'Airball | Overview')">
+        <img src="assets/Airball Showcase1.png" alt="Airball Showcase 1">
+        <div class="gm-overlay"><span>AIRBALL | OVERVIEW</span></div>
+      </div>
+      <div class="gm-item" onclick="openLightbox('assets/Airball Showcase2.png', 'Airball | Layout B')">
+        <img src="assets/Airball Showcase2.png" alt="Airball Showcase 2">
+        <div class="gm-overlay"><span>LAYOUT B</span></div>
+      </div>
+      <div class="gm-item" onclick="openLightbox('assets/Airball Showcase3.png', 'Airball | Detail')">
+        <img src="assets/Airball Showcase3.png" alt="Airball Showcase 3">
+        <div class="gm-overlay"><span>DETAIL VIEW</span></div>
+      </div>
+      <div class="gm-item" onclick="openLightbox('assets/Airball Showcase4.png', 'Airball | Section B')">
+        <img src="assets/Airball Showcase4.png" alt="Airball Showcase 4">
+        <div class="gm-overlay"><span>SECTION B</span></div>
+      </div>
+      <div class="gm-item" onclick="openLightbox('assets/Airball Showcase5.png', 'Airball | Final')">
+        <img src="assets/Airball Showcase5.png" alt="Airball Showcase 5">
+        <div class="gm-overlay"><span>FINAL LAYOUT</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" onclick="closeLightbox()">
+    <button class="lb-close" onclick="closeLightbox()">CLOSE ×</button>
+    <div class="lb-inner">
+      <img id="lb-img" src="" alt="">
+      <div id="lb-label"></div>
+    </div>
+  </div>
+
+  <section id="unity" data-section="03 UNITY / C#">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>Unity / C#</h2>
+    </div>
+    <p class="section-desc">Production-grade Unity systems. Not toy examples, physics controllers, generic state machines, object poolers, and event architecture written for real games.</p>
+    <div class="ide-window">
+      <div class="ide-topbar">
+        <div class="ide-dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="ide-tabs" id="unity-tabs">
+          <button class="ide-tab active" onclick="switchTab('unity','cc',this)">PlayerCharacterController.cs</button>
+          <button class="ide-tab" onclick="switchTab('unity','pool',this)">ObjectPooler.cs</button>
+          <button class="ide-tab" onclick="switchTab('unity','sm',this)">StateMachine.cs</button>
+          <button class="ide-tab" onclick="switchTab('unity','ev',this)">EventBus.cs</button>
+        </div>
+      </div>
+      <div class="ide-body">
+        <div class="ide-pane active" id="unity-cc">
+          <pre><code class="language-csharp">using UnityEngine;
+using System.Collections;
+
+[RequireComponent(typeof(Rigidbody))]
+public sealed class PlayerCharacterController : MonoBehaviour
+{
+    [Header("Movement")]
+    [SerializeField] private float moveSpeed = 8f;
+    [SerializeField] private float acceleration = 20f;
+    [SerializeField] private float deceleration = 25f;
+    [SerializeField] private float airControlMultiplier = 0.4f;
+
+    [Header("Jumping")]
+    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float gravityScale = 2.5f;
+    [SerializeField] private float fallGravityScale = 4f;
+    [SerializeField] private float coyoteTime = 0.15f;
+    [SerializeField] private float jumpBufferTime = 0.12f;
+    [SerializeField] private int maxExtraJumps = 1;
+
+    [Header("Ground Detection")]
+    [SerializeField] private LayerMask groundMask;
+    [SerializeField] private float groundCheckRadius = 0.25f;
+    [SerializeField] private Transform groundCheckPoint;
+
+    private Rigidbody rb;
+    private Vector3 moveInput;
+    private float coyoteTimer;
+    private float jumpBufferTimer;
+    private int extraJumpsLeft;
+    private bool isGrounded;
+    private bool wasGrounded;
+    private bool jumpConsumed;
+
+    private static readonly float GravityBase = Physics.gravity.y;
+
+    private void Awake()
+    {
+        rb = GetComponent&lt;Rigidbody&gt;();
+        rb.freezeRotation = true;
+        rb.interpolation = RigidbodyInterpolation.Interpolate;
+    }
+
+    private void Update()
+    {
+        ReadInput();
+        UpdateGroundState();
+        HandleCoyoteTime();
+        HandleJumpBuffer();
+        TryJump();
+    }
+
+    private void FixedUpdate()
+    {
+        ApplyMovement();
+        ApplyCustomGravity();
+    }
+
+    private void ReadInput()
+    {
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+        moveInput = new Vector3(h, 0f, v).normalized;
+        if (Input.GetButtonDown("Jump"))
+            jumpBufferTimer = jumpBufferTime;
+    }
+
+    private void UpdateGroundState()
+    {
+        wasGrounded = isGrounded;
+        isGrounded = Physics.CheckSphere(
+            groundCheckPoint.position, groundCheckRadius,
+            groundMask, QueryTriggerInteraction.Ignore);
+        if (isGrounded && !wasGrounded) OnLanded();
+    }
+
+    private void OnLanded()
+    {
+        extraJumpsLeft = maxExtraJumps;
+        jumpConsumed = false;
+        StopCoroutine(nameof(LandingSquishCoroutine));
+        StartCoroutine(nameof(LandingSquishCoroutine));
+    }
+
+    private IEnumerator LandingSquishCoroutine()
+    {
+        Vector3 squish = new Vector3(1.15f, 0.8f, 1.15f);
+        float t = 0f;
+        while (t &lt; 1f)
+        {
+            transform.localScale = Vector3.Lerp(squish, Vector3.one, t);
+            t += Time.deltaTime * 12f;
+            yield return null;
+        }
+        transform.localScale = Vector3.one;
+    }
+
+    private void HandleCoyoteTime()
+    {
+        if (isGrounded) coyoteTimer = coyoteTime;
+        else coyoteTimer -= Time.deltaTime;
+    }
+
+    private void HandleJumpBuffer()
+    {
+        if (jumpBufferTimer > 0f) jumpBufferTimer -= Time.deltaTime;
+    }
+
+    private void TryJump()
+    {
+        bool canCoyoteJump = coyoteTimer > 0f && !jumpConsumed;
+        bool hasBuffer = jumpBufferTimer > 0f;
+        if (!hasBuffer) return;
+        if (canCoyoteJump)
+        {
+            PerformJump(jumpForce);
+            jumpConsumed = true;
+            jumpBufferTimer = 0f;
+            coyoteTimer = 0f;
+        }
+        else if (extraJumpsLeft > 0 && !isGrounded)
+        {
+            PerformJump(jumpForce * 0.85f);
+            extraJumpsLeft--;
+            jumpBufferTimer = 0f;
+        }
+    }
+
+    private void PerformJump(float force)
+    {
+        Vector3 v = rb.velocity;
+        v.y = 0f;
+        rb.velocity = v;
+        rb.AddForce(Vector3.up * force, ForceMode.Impulse);
+    }
+
+    private void ApplyMovement()
+    {
+        Vector3 target = moveInput * moveSpeed;
+        Vector3 current = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        float control = isGrounded ? 1f : airControlMultiplier;
+        float rate = moveInput.sqrMagnitude > 0.01f
+            ? acceleration * control
+            : deceleration * control;
+        Vector3 next = Vector3.MoveTowards(current, target, rate * Time.fixedDeltaTime);
+        rb.velocity = new Vector3(next.x, rb.velocity.y, next.z);
+    }
+
+    private void ApplyCustomGravity()
+    {
+        float scale = rb.velocity.y &lt; 0f ? fallGravityScale : gravityScale;
+        rb.AddForce(Vector3.up * GravityBase * (scale - 1f), ForceMode.Acceleration);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheckPoint == null) return;
+        Gizmos.color = isGrounded ? Color.green : Color.red;
+        Gizmos.DrawWireSphere(groundCheckPoint.position, groundCheckRadius);
+    }
+}</code></pre>
+          <div class="ide-desc">Physics-based <strong>Rigidbody character controller</strong> with coyote time, jump buffering, variable gravity, multi-jump, and a landing squish coroutine. Full physics interaction with other rigidbodies.</div>
+        </div>
+        <div class="ide-pane" id="unity-pool">
+          <pre><code class="language-csharp">using UnityEngine;
+using System;
+using System.Collections.Generic;
+
+public sealed class ObjectPooler : MonoBehaviour
+{
+    [Serializable]
+    public struct PoolDefinition
+    {
+        public string key;
+        public GameObject prefab;
+        public int initialSize;
+        public bool expandable;
+        public Transform parent;
+    }
+
+    [SerializeField] private PoolDefinition[] pools;
+
+    private readonly Dictionary&lt;string, Queue&lt;GameObject&gt;&gt; available = new();
+    private readonly Dictionary&lt;string, List&lt;GameObject&gt;&gt; allObjects = new();
+    private readonly Dictionary&lt;string, PoolDefinition&gt; definitions = new();
+
+    public static ObjectPooler Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        InitialisePools();
+    }
+
+    private void InitialisePools()
+    {
+        foreach (PoolDefinition def in pools)
+        {
+            if (available.ContainsKey(def.key)) continue;
+            available[def.key] = new Queue&lt;GameObject&gt;();
+            allObjects[def.key] = new List&lt;GameObject&gt;(def.initialSize);
+            definitions[def.key] = def;
+            for (int i = 0; i &lt; def.initialSize; i++)
+                CreateAndEnqueue(def);
+        }
+    }
+
+    private GameObject CreateAndEnqueue(PoolDefinition def)
+    {
+        GameObject go = Instantiate(def.prefab, def.parent);
+        go.SetActive(false);
+        available[def.key].Enqueue(go);
+        allObjects[def.key].Add(go);
+        if (go.TryGetComponent(out IPoolable poolable)) poolable.OnCreated();
+        return go;
+    }
+
+    public GameObject Get(string key, Vector3 position, Quaternion rotation)
+    {
+        if (!definitions.TryGetValue(key, out PoolDefinition def)) return null;
+        if (available[key].Count == 0)
+        {
+            if (!def.expandable) return null;
+            CreateAndEnqueue(def);
+        }
+        GameObject go = available[key].Dequeue();
+        go.transform.SetPositionAndRotation(position, rotation);
+        go.SetActive(true);
+        if (go.TryGetComponent(out IPoolable poolable)) poolable.OnSpawned();
+        return go;
+    }
+
+    public void Return(string key, GameObject go)
+    {
+        if (!available.ContainsKey(key)) { Destroy(go); return; }
+        if (go.TryGetComponent(out IPoolable poolable)) poolable.OnDespawned();
+        go.SetActive(false);
+        available[key].Enqueue(go);
+    }
+
+    public void ReturnAll(string key)
+    {
+        if (!allObjects.TryGetValue(key, out List&lt;GameObject&gt; list)) return;
+        foreach (GameObject go in list)
+            if (go.activeSelf) Return(key, go);
+    }
+
+    public int GetActiveCount(string key)
+    {
+        if (!allObjects.TryGetValue(key, out List&lt;GameObject&gt; list)) return 0;
+        int count = 0;
+        foreach (GameObject go in list) if (go.activeSelf) count++;
+        return count;
+    }
+}
+
+public interface IPoolable
+{
+    void OnCreated();
+    void OnSpawned();
+    void OnDespawned();
+}</code></pre>
+          <div class="ide-desc">Singleton <strong>generic object pooler</strong> with named pools, expandable capacity, parent transforms, and the IPoolable lifecycle interface. Eliminates GC spikes from Instantiate/Destroy in hot paths.</div>
+        </div>
+        <div class="ide-pane" id="unity-sm">
+          <pre><code class="language-csharp">using UnityEngine;
+using System;
+using System.Collections.Generic;
+
+public class StateMachine&lt;TOwner&gt;
+{
+    private readonly TOwner owner;
+    private IState&lt;TOwner&gt; currentState;
+    private IState&lt;TOwner&gt; previousState;
+    private readonly Dictionary&lt;Type, IState&lt;TOwner&gt;&gt; states = new();
+    private readonly List&lt;Transition&lt;TOwner&gt;&gt; anyTransitions = new();
+    private readonly Dictionary&lt;Type, List&lt;Transition&lt;TOwner&gt;&gt;&gt; stateTransitions = new();
+
+    public IState&lt;TOwner&gt; CurrentState =&gt; currentState;
+    public event Action&lt;IState&lt;TOwner&gt;, IState&lt;TOwner&gt;&gt; OnStateChanged;
+
+    public StateMachine(TOwner owner) { this.owner = owner; }
+
+    public void AddState&lt;TState&gt;() where TState : IState&lt;TOwner&gt;, new()
+    {
+        TState state = new();
+        state.Initialise(owner);
+        states[typeof(TState)] = state;
+    }
+
+    public void AddTransition&lt;TFrom, TTo&gt;(Func&lt;bool&gt; condition)
+        where TFrom : IState&lt;TOwner&gt;
+        where TTo   : IState&lt;TOwner&gt;
+    {
+        Type from = typeof(TFrom);
+        if (!stateTransitions.ContainsKey(from))
+            stateTransitions[from] = new List&lt;Transition&lt;TOwner&gt;&gt;();
+        stateTransitions[from].Add(new Transition&lt;TOwner&gt;(GetState&lt;TTo&gt;(), condition));
+    }
+
+    public void AddAnyTransition&lt;TTo&gt;(Func&lt;bool&gt; condition) where TTo : IState&lt;TOwner&gt;
+    {
+        anyTransitions.Add(new Transition&lt;TOwner&gt;(GetState&lt;TTo&gt;(), condition));
+    }
+
+    public void SetInitialState&lt;TState&gt;() where TState : IState&lt;TOwner&gt;
+    {
+        currentState = GetState&lt;TState&gt;();
+        currentState.Enter();
+    }
+
+    public void Tick()
+    {
+        Transition&lt;TOwner&gt; triggered = GetTriggeredTransition();
+        if (triggered != null) ChangeState(triggered.To);
+        currentState?.Tick();
+    }
+
+    public void TickFixed() =&gt; currentState?.TickFixed();
+
+    public void ForceState&lt;TState&gt;() where TState : IState&lt;TOwner&gt;
+        =&gt; ChangeState(GetState&lt;TState&gt;());
+
+    private Transition&lt;TOwner&gt; GetTriggeredTransition()
+    {
+        foreach (Transition&lt;TOwner&gt; t in anyTransitions)
+            if (t.Condition()) return t;
+        Type type = currentState?.GetType();
+        if (type != null && stateTransitions.TryGetValue(type, out var list))
+            foreach (Transition&lt;TOwner&gt; t in list)
+                if (t.Condition()) return t;
+        return null;
+    }
+
+    private void ChangeState(IState&lt;TOwner&gt; next)
+    {
+        if (next == currentState) return;
+        previousState = currentState;
+        currentState?.Exit();
+        currentState = next;
+        currentState.Enter();
+        OnStateChanged?.Invoke(previousState, currentState);
+    }
+
+    private IState&lt;TOwner&gt; GetState&lt;TState&gt;() where TState : IState&lt;TOwner&gt;
+    {
+        states.TryGetValue(typeof(TState), out IState&lt;TOwner&gt; state);
+        return state;
+    }
+}
+
+public interface IState&lt;TOwner&gt;
+{
+    void Initialise(TOwner owner);
+    void Enter();
+    void Tick();
+    void TickFixed();
+    void Exit();
+}
+
+public abstract class BaseState&lt;TOwner&gt; : IState&lt;TOwner&gt;
+{
+    protected TOwner Owner { get; private set; }
+    public void Initialise(TOwner owner) =&gt; Owner = owner;
+    public virtual void Enter() { }
+    public virtual void Tick() { }
+    public virtual void TickFixed() { }
+    public virtual void Exit() { }
+}
+
+internal sealed class Transition&lt;TOwner&gt;
+{
+    public readonly IState&lt;TOwner&gt; To;
+    public readonly Func&lt;bool&gt; Condition;
+    public Transition(IState&lt;TOwner&gt; to, Func&lt;bool&gt; condition) { To = to; Condition = condition; }
+}
+
+public sealed class EnemyIdleState   : BaseState&lt;EnemyAI&gt; { }
+public sealed class EnemyChaseState  : BaseState&lt;EnemyAI&gt;
+{
+    public override void Tick() =&gt; Owner.MoveTowardsTarget();
+}
+public sealed class EnemyAttackState : BaseState&lt;EnemyAI&gt;
+{
+    public override void Enter() =&gt; Owner.TriggerAttack();
+    public override void Exit()  =&gt; Owner.ResetCooldown();
+}
+
+public class EnemyAI : MonoBehaviour
+{
+    [SerializeField] private float detectionRange = 10f;
+    [SerializeField] private float attackRange = 2f;
+    [SerializeField] private float moveSpeed = 4f;
+
+    private StateMachine&lt;EnemyAI&gt; sm;
+    private Transform target;
+    public float DistanceToTarget =&gt; target != null
+        ? Vector3.Distance(transform.position, target.position) : float.MaxValue;
+
+    private void Awake()
+    {
+        target = GameObject.FindGameObjectWithTag("Player")?.transform;
+        sm = new StateMachine&lt;EnemyAI&gt;(this);
+        sm.AddState&lt;EnemyIdleState&gt;();
+        sm.AddState&lt;EnemyChaseState&gt;();
+        sm.AddState&lt;EnemyAttackState&gt;();
+        sm.AddTransition&lt;EnemyIdleState,   EnemyChaseState&gt; (() =&gt; DistanceToTarget &lt; detectionRange);
+        sm.AddTransition&lt;EnemyChaseState,  EnemyIdleState&gt;  (() =&gt; DistanceToTarget &gt; detectionRange * 1.2f);
+        sm.AddTransition&lt;EnemyChaseState,  EnemyAttackState&gt;(() =&gt; DistanceToTarget &lt; attackRange);
+        sm.AddTransition&lt;EnemyAttackState, EnemyChaseState&gt; (() =&gt; DistanceToTarget &gt;= attackRange);
+        sm.SetInitialState&lt;EnemyIdleState&gt;();
+    }
+
+    private void Update()       =&gt; sm.Tick();
+    private void FixedUpdate()  =&gt; sm.TickFixed();
+    public void MoveTowardsTarget()
+    {
+        if (target == null) return;
+        transform.position = Vector3.MoveTowards(
+            transform.position, target.position, moveSpeed * Time.deltaTime);
+    }
+    public void TriggerAttack()  { }
+    public void ResetCooldown()  { }
+}</code></pre>
+          <div class="ide-desc"><strong>Generic finite state machine</strong> with typed transitions, any-state transitions, and a complete EnemyAI demo. States are fully decoupled. OnStateChanged events wire to audio, animation, and UI.</div>
+        </div>
+        <div class="ide-pane" id="unity-ev">
+          <pre><code class="language-csharp">using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+public static class EventBus&lt;T&gt; where T : struct
+{
+    private static readonly HashSet&lt;IEventBinding&lt;T&gt;&gt; bindings = new();
+
+    public static void Register(IEventBinding&lt;T&gt; binding)   =&gt; bindings.Add(binding);
+    public static void Deregister(IEventBinding&lt;T&gt; binding) =&gt; bindings.Remove(binding);
+
+    public static void Raise(T @event)
+    {
+        foreach (IEventBinding&lt;T&gt; binding in bindings)
+        {
+            binding.OnEvent?.Invoke(@event);
+            binding.OnEventNoArgs?.Invoke();
+        }
+    }
+}
+
+public interface IEventBinding&lt;T&gt;
+{
+    Action&lt;T&gt; OnEvent { get; set; }
+    Action OnEventNoArgs { get; set; }
+}
+
+public class EventBinding&lt;T&gt; : IEventBinding&lt;T&gt; where T : struct
+{
+    private Action&lt;T&gt; onEvent = _ =&gt; { };
+    private Action onEventNoArgs = () =&gt; { };
+
+    Action&lt;T&gt; IEventBinding&lt;T&gt;.OnEvent { get =&gt; onEvent; set =&gt; onEvent = value; }
+    Action IEventBinding&lt;T&gt;.OnEventNoArgs { get =&gt; onEventNoArgs; set =&gt; onEventNoArgs = value; }
+
+    public EventBinding(Action&lt;T&gt; onEvent) =&gt; this.onEvent = onEvent;
+    public EventBinding(Action onEventNoArgs) =&gt; this.onEventNoArgs = onEventNoArgs;
+
+    public void Add(Action response)       =&gt; onEventNoArgs += response;
+    public void Remove(Action response)    =&gt; onEventNoArgs -= response;
+    public void Add(Action&lt;T&gt; response)    =&gt; onEvent += response;
+    public void Remove(Action&lt;T&gt; response) =&gt; onEvent -= response;
+}
+
+public struct PlayerDiedEvent    { public int Score; public float SurvivalTime; public Vector3 DeathPosition; }
+public struct EnemyKilledEvent   { public GameObject Enemy; public int PointValue; }
+public struct ScoreChangedEvent  { public int PreviousScore; public int NewScore; }
+
+public class GameScoreManager : MonoBehaviour
+{
+    private int score;
+    private EventBinding&lt;EnemyKilledEvent&gt; enemyKilledBinding;
+
+    private void OnEnable()
+    {
+        enemyKilledBinding = new EventBinding&lt;EnemyKilledEvent&gt;(OnEnemyKilled);
+        EventBus&lt;EnemyKilledEvent&gt;.Register(enemyKilledBinding);
+    }
+
+    private void OnDisable() =&gt; EventBus&lt;EnemyKilledEvent&gt;.Deregister(enemyKilledBinding);
+
+    private void OnEnemyKilled(EnemyKilledEvent e)
+    {
+        int prev = score;
+        score += e.PointValue;
+        EventBus&lt;ScoreChangedEvent&gt;.Raise(new ScoreChangedEvent { PreviousScore = prev, NewScore = score });
+    }
+}
+
+public class ScoreUI : MonoBehaviour
+{
+    private EventBinding&lt;ScoreChangedEvent&gt; scoreBinding;
+
+    private void OnEnable()
+    {
+        scoreBinding = new EventBinding&lt;ScoreChangedEvent&gt;(OnScoreChanged);
+        EventBus&lt;ScoreChangedEvent&gt;.Register(scoreBinding);
+    }
+
+    private void OnDisable() =&gt; EventBus&lt;ScoreChangedEvent&gt;.Deregister(scoreBinding);
+    private void OnScoreChanged(ScoreChangedEvent e) =&gt; Debug.Log($"Score: {e.PreviousScore} =&gt; {e.NewScore}");
+}</code></pre>
+          <div class="ide-desc"><strong>Type-safe decoupled event bus</strong> using generic static classes. Zero string IDs, zero boxing for struct events. EnemyKilledEvent chains into ScoreChangedEvent with no direct references between systems.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="api" data-section="04 API / WEB">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>API &amp; Web Dev</h2>
+    </div>
+    <p class="section-desc">TypeScript-first backend APIs for games using Supabase, PostgreSQL, and Row Level Security. Production APIs are under NDA, what you see here reflects the architecture and patterns I use day-to-day.</p>
+    <div class="api-tech-row">
+      <span class="tech-chip orange">TypeScript</span>
+      <span class="tech-chip orange">Supabase</span>
+      <span class="tech-chip orange">PostgreSQL</span>
+      <span class="tech-chip orange">Edge Functions</span>
+      <span class="tech-chip">REST</span>
+      <span class="tech-chip">Realtime</span>
+      <span class="tech-chip">JWT Auth</span>
+      <span class="tech-chip">Row Level Security</span>
+    </div>
+    <div class="ide-window" style="margin-top:28px">
+      <div class="ide-topbar">
+        <div class="ide-dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="ide-tabs" id="api-tabs">
+          <button class="ide-tab active" onclick="switchTab('api','auth',this)">auth.service.ts</button>
+          <button class="ide-tab" onclick="switchTab('api','lb',this)">leaderboard.service.ts</button>
+          <button class="ide-tab" onclick="switchTab('api','inv',this)">inventory.service.ts</button>
+          <button class="ide-tab" onclick="switchTab('api','web',this)">this-site.js</button>
+        </div>
+      </div>
+      <div class="ide-body">
+        <div class="ide-pane active" id="api-auth">
+          <pre><code class="language-typescript">import { createClient, SupabaseClient, Session, AuthError } from '@supabase/supabase-js';
+
+const SUPABASE_URL     = process.env.SUPABASE_URL!;
+const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY!;
+
+export interface PlayerProfile {
+  id: string;
+  username: string;
+  display_name: string;
+  avatar_url: string | null;
+  elo_rating: number;
+  total_matches: number;
+  wins: number;
+  created_at: string;
+}
+
+export type AuthResult&lt;T&gt; =
+  | { ok: true;  data: T }
+  | { ok: false; error: string };
+
+export class AuthService {
+  private readonly supabase: SupabaseClient;
+
+  constructor() {
+    this.supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false },
+    });
+  }
+
+  async signUp(email: string, password: string, username: string): Promise&lt;AuthResult&lt;Session&gt;&gt; {
+    const taken = await this.isUsernameTaken(username);
+    if (taken) return { ok: false, error: 'Username already taken.' };
+
+    const { data, error } = await this.supabase.auth.signUp({
+      email, password, options: { data: { username } },
+    });
+
+    if (error)          return { ok: false, error: this.formatAuthError(error) };
+    if (!data.session)  return { ok: false, error: 'Awaiting email confirmation.' };
+
+    await this.createPlayerProfile(data.session.user.id, username);
+    return { ok: true, data: data.session };
+  }
+
+  async signIn(email: string, password: string): Promise&lt;AuthResult&lt;Session&gt;&gt; {
+    const { data, error } = await this.supabase.auth.signInWithPassword({ email, password });
+    if (error || !data.session) return { ok: false, error: this.formatAuthError(error!) };
+    await this.updateLastSeen(data.session.user.id);
+    return { ok: true, data: data.session };
+  }
+
+  async getProfile(userId: string): Promise&lt;AuthResult&lt;PlayerProfile&gt;&gt; {
+    const { data, error } = await this.supabase
+      .from('player_profiles').select('*').eq('id', userId).single();
+    if (error || !data) return { ok: false, error: 'Profile not found.' };
+    return { ok: true, data: data as PlayerProfile };
+  }
+
+  async refreshSession(): Promise&lt;AuthResult&lt;Session&gt;&gt; {
+    const { data, error } = await this.supabase.auth.refreshSession();
+    if (error || !data.session) return { ok: false, error: 'Session expired.' };
+    return { ok: true, data: data.session };
+  }
+
+  async signOut(): Promise&lt;void&gt; { await this.supabase.auth.signOut(); }
+
+  private async isUsernameTaken(username: string): Promise&lt;boolean&gt; {
+    const { count } = await this.supabase
+      .from('player_profiles').select('id', { count: 'exact', head: true }).ilike('username', username);
+    return (count ?? 0) &gt; 0;
+  }
+
+  private async createPlayerProfile(userId: string, username: string): Promise&lt;void&gt; {
+    await this.supabase.from('player_profiles').insert({
+      id: userId, username, display_name: username, elo_rating: 1000, total_matches: 0, wins: 0,
+    });
+  }
+
+  private async updateLastSeen(userId: string): Promise&lt;void&gt; {
+    await this.supabase.from('player_profiles')
+      .update({ last_seen_at: new Date().toISOString() }).eq('id', userId);
+  }
+
+  private formatAuthError(error: AuthError): string {
+    const map: Record&lt;string, string&gt; = {
+      'Invalid login credentials': 'Incorrect email or password.',
+      'Email not confirmed':        'Please confirm your email first.',
+      'User already registered':    'An account with this email already exists.',
+    };
+    return map[error.message] ?? error.message;
+  }
+}
+
+export const authService = new AuthService();</code></pre>
+          <div class="ide-desc"><strong>Production auth service</strong> wrapping Supabase Auth. Username uniqueness validation, automatic profile creation, ELO initialisation, last-seen tracking, and typed discriminated union results. No thrown exceptions in the auth layer.</div>
+        </div>
+        <div class="ide-pane" id="api-lb">
+          <pre><code class="language-typescript">import { RealtimeChannel } from '@supabase/supabase-js';
+import { supabase } from './supabase.client';
+
+export interface LeaderboardEntry {
+  rank: number;
+  player_id: string;
+  username: string;
+  display_name: string;
+  score: number;
+  elo_rating: number;
+  wins: number;
+  total_matches: number;
+}
+
+export interface SubmitScorePayload {
+  playerId: string;
+  gameMode: string;
+  score: number;
+  metadata?: Record&lt;string, unknown&gt;;
+}
+
+const CACHE_TTL_MS = 30_000;
+
+class LeaderboardCache {
+  private entries = new Map&lt;string, { data: LeaderboardEntry[]; ts: number }&gt;();
+
+  get(key: string): LeaderboardEntry[] | null {
+    const cached = this.entries.get(key);
+    if (!cached) return null;
+    if (Date.now() - cached.ts &gt; CACHE_TTL_MS) { this.entries.delete(key); return null; }
+    return cached.data;
+  }
+
+  set(key: string, data: LeaderboardEntry[]): void {
+    this.entries.set(key, { data, ts: Date.now() });
+  }
+
+  invalidate(key: string): void {
+    for (const k of this.entries.keys())
+      if (k.startsWith(key)) this.entries.delete(k);
+  }
+}
+
+const cache = new LeaderboardCache();
+
+export async function getLeaderboard(
+  gameMode: string, limit = 100, offset = 0
+): Promise&lt;LeaderboardEntry[]&gt; {
+  const cacheKey = `${gameMode}:${limit}:${offset}`;
+  const cached = cache.get(cacheKey);
+  if (cached) return cached;
+
+  const { data, error } = await supabase
+    .from('leaderboard_view')
+    .select('rank,player_id,username,display_name,score,elo_rating,wins,total_matches')
+    .eq('game_mode', gameMode)
+    .order('score', { ascending: false })
+    .range(offset, offset + limit - 1);
+
+  if (error) throw new Error(`Leaderboard fetch failed: ${error.message}`);
+  const entries = (data ?? []) as LeaderboardEntry[];
+  cache.set(cacheKey, entries);
+  return entries;
+}
+
+export async function submitScore(payload: SubmitScorePayload): Promise&lt;void&gt; {
+  const { playerId, gameMode, score, metadata } = payload;
+
+  const { data: existing } = await supabase
+    .from('scores').select('id,score').eq('player_id', playerId).eq('game_mode', gameMode).single();
+
+  if (existing && existing.score &gt;= score) return;
+
+  const upsertData = {
+    player_id: playerId, game_mode: gameMode, score,
+    metadata: metadata ?? {}, submitted_at: new Date().toISOString(),
+  };
+
+  const { error } = existing
+    ? await supabase.from('scores').update(upsertData).eq('id', existing.id)
+    : await supabase.from('scores').insert(upsertData);
+
+  if (error) throw new Error(`Score submit failed: ${error.message}`);
+  cache.invalidate(gameMode);
+}
+
+export async function getPlayerRank(playerId: string, gameMode: string): Promise&lt;number | null&gt; {
+  const { data, error } = await supabase
+    .from('leaderboard_view').select('rank')
+    .eq('player_id', playerId).eq('game_mode', gameMode).single();
+  if (error || !data) return null;
+  return data.rank as number;
+}
+
+export function subscribeToLeaderboard(
+  gameMode: string,
+  onUpdate: (entries: LeaderboardEntry[]) =&gt; void
+): RealtimeChannel {
+  return supabase
+    .channel(`leaderboard:${gameMode}`)
+    .on('postgres_changes',
+      { event: '*', schema: 'public', table: 'scores', filter: `game_mode=eq.${gameMode}` },
+      async () => {
+        cache.invalidate(gameMode);
+        const fresh = await getLeaderboard(gameMode, 100, 0);
+        onUpdate(fresh);
+      })
+    .subscribe();
+}</code></pre>
+          <div class="ide-desc"><strong>Realtime leaderboard service</strong> with TTL caching, personal best gating, Supabase Realtime subscriptions, and cache invalidation on mutations. Backed by a Postgres view for computed ranks.</div>
+        </div>
+        <div class="ide-pane" id="api-inv">
+          <pre><code class="language-typescript">import { supabase } from './supabase.client';
+
+export type ItemRarity = 'common' | 'uncommon' | 'rare' | 'epic' | 'legendary';
+
+export interface InventoryItem {
+  instance_id: string;
+  item_id: string;
+  item_name: string;
+  rarity: ItemRarity;
+  quantity: number;
+  is_equipped: boolean;
+  acquired_at: string;
+  attributes: Record&lt;string, number | string&gt;;
+}
+
+export interface GrantItemPayload {
+  playerId: string;
+  itemId: string;
+  quantity?: number;
+  source?: string;
+}
+
+export async function getInventory(playerId: string): Promise&lt;InventoryItem[]&gt; {
+  const { data, error } = await supabase
+    .from('inventory_view').select('*').eq('player_id', playerId)
+    .order('acquired_at', { ascending: false });
+  if (error) throw new Error(`Inventory fetch failed: ${error.message}`);
+  return (data ?? []) as InventoryItem[];
+}
+
+export async function grantItem(payload: GrantItemPayload): Promise&lt;InventoryItem&gt; {
+  const { playerId, itemId, quantity = 1, source = 'system' } = payload;
+
+  const { data: itemDef, error: defErr } = await supabase
+    .from('item_definitions').select('id,is_stackable,max_stack').eq('id', itemId).single();
+  if (defErr || !itemDef) throw new Error(`Item definition not found: ${itemId}`);
+
+  if (itemDef.is_stackable) {
+    const { data: existing } = await supabase
+      .from('player_inventory').select('instance_id,quantity')
+      .eq('player_id', playerId).eq('item_id', itemId).single();
+
+    if (existing) {
+      const newQty = Math.min(existing.quantity + quantity, itemDef.max_stack);
+      const { data, error } = await supabase
+        .from('player_inventory').update({ quantity: newQty })
+        .eq('instance_id', existing.instance_id).select().single();
+      if (error) throw new Error(`Stack update failed: ${error.message}`);
+      return data as InventoryItem;
+    }
+  }
+
+  const { data, error } = await supabase
+    .from('player_inventory')
+    .insert({ player_id: playerId, item_id: itemId, quantity, source, acquired_at: new Date().toISOString() })
+    .select().single();
+  if (error) throw new Error(`Item grant failed: ${error.message}`);
+  return data as InventoryItem;
+}
+
+export async function consumeItem(playerId: string, instanceId: string, amount = 1): Promise&lt;void&gt; {
+  const { data: item, error: fetchErr } = await supabase
+    .from('player_inventory').select('quantity')
+    .eq('player_id', playerId).eq('instance_id', instanceId).single();
+  if (fetchErr || !item) throw new Error('Item not found in inventory.');
+  if (item.quantity &lt; amount) throw new Error('Insufficient quantity.');
+
+  const newQty = item.quantity - amount;
+  if (newQty === 0) {
+    const { error } = await supabase.from('player_inventory').delete().eq('instance_id', instanceId);
+    if (error) throw new Error(`Delete failed: ${error.message}`);
+  } else {
+    const { error } = await supabase.from('player_inventory')
+      .update({ quantity: newQty }).eq('instance_id', instanceId);
+    if (error) throw new Error(`Quantity update failed: ${error.message}`);
+  }
+}
+
+export async function setEquipped(playerId: string, instanceId: string, equipped: boolean): Promise&lt;void&gt; {
+  const { error } = await supabase
+    .from('player_inventory').update({ is_equipped: equipped })
+    .eq('player_id', playerId).eq('instance_id', instanceId);
+  if (error) throw new Error(`Equip toggle failed: ${error.message}`);
+}</code></pre>
+          <div class="ide-desc"><strong>Inventory API</strong> with stackable item merging, max stack enforcement, consume-and-delete at zero, and equip toggling. Secured by Supabase RLS, players can only access their own rows.</div>
+        </div>
+        <div class="ide-pane" id="api-web">
+          <pre><code class="language-javascript">const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@&$';
+
+function scramble(el, finalText, durationMs) {
+  const totalFrames = 50;
+  let frame = 0;
+  const id = setInterval(function() {
+    el.textContent = finalText.split('').map(function(ch, i) {
+      if (ch === ' ' || ch === '.') return ch;
+      if (frame / totalFrames > i / finalText.length) return ch;
+      return CHARS[Math.floor(Math.random() * CHARS.length)];
+    }).join('');
+    if (++frame > totalFrames) { clearInterval(id); el.textContent = finalText; }
+  }, durationMs / totalFrames);
+}
+
+function initParticles() {
+  const canvas = document.getElementById('particle-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, particles;
+  const COUNT = 90;
+  const CONNECT = 130;
+  const A = [180, 255, 0];
+
+  function resize() { W = canvas.width = innerWidth; H = canvas.height = innerHeight; }
+
+  function makeP() {
+    const angle = Math.random() * Math.PI * 2;
+    const spd = 0.12 + Math.random() * 0.22;
+    return { x: Math.random()*W, y: Math.random()*H,
+             vx: Math.cos(angle)*spd, vy: Math.sin(angle)*spd,
+             r: 0.6 + Math.random()*1.6, op: 0.1 + Math.random()*0.35 };
+  }
+
+  function init() { particles = Array.from({length:COUNT}, makeP); }
+
+  function draw() {
+    ctx.clearRect(0,0,W,H);
+    for (let i = 0; i < particles.length-1; i++) {
+      for (let j = i+1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const d = Math.sqrt(dx*dx+dy*dy);
+        if (d > CONNECT) continue;
+        const al = (1-d/CONNECT)*0.07;
+        ctx.beginPath();
+        ctx.moveTo(particles[i].x, particles[i].y);
+        ctx.lineTo(particles[j].x, particles[j].y);
+        ctx.strokeStyle = `rgba(${A},${al})`;
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+      }
+    }
+    particles.forEach(function(p) {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < -8) p.x = W+8; if (p.x > W+8) p.x = -8;
+      if (p.y < -8) p.y = H+8; if (p.y > H+8) p.y = -8;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(${A},${p.op})`;
+      ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+
+  addEventListener('resize', function() { resize(); init(); });
+  resize(); init(); draw();
+}
+
+function initScrollAnimations() {
+  const obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('revealed');
+      obs.unobserve(e.target);
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+
+  document.querySelectorAll('.skill-block, .gm-item, .vr-card, .exp-item, .reveal')
+    .forEach(function(el) { obs.observe(el); });
+}
+
+function initSkillBars() {
+  const barObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (!e.isIntersecting) return;
+      const fill = e.target.querySelector('.skill-bar-fill');
+      if (fill) fill.style.width = fill.dataset.pct + '%';
+      barObs.unobserve(e.target);
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.skill-block').forEach(function(el) { barObs.observe(el); });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  initParticles();
+  initScrollAnimations();
+  initSkillBars();
+});</code></pre>
+          <div class="ide-desc"><strong>This portfolio's own JavaScript</strong>,  the scramble text effect, particle network renderer, IntersectionObserver scroll reveals, and skill bar animations. Zero frameworks. Every line written by hand.</div>
+        </div>
+      </div>
+    </div>
+    <div class="site-meta reveal">
+      <div class="site-meta-title">THIS SITE AT A GLANCE</div>
+      <div class="site-meta-row"><span class="smk">Framework</span><span>None. Pure HTML, CSS, JavaScript.</span></div>
+      <div class="site-meta-row"><span class="smk">External libs</span><span>highlight.js · Google Fonts (2 families)</span></div>
+      <div class="site-meta-row"><span class="smk">Animations</span><span>CSS keyframes · IntersectionObserver · Canvas API</span></div>
+      <div class="site-meta-row"><span class="smk">Layout</span><span>CSS Grid · Flexbox · fully responsive</span></div>
+      <div class="site-meta-row"><span class="smk">Deployment</span><span>GitHub Pages</span></div>
+    </div>
+  </section>
+
+  <section id="vr" data-section="05 VR / XR">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>VR / XR Dev</h2>
+    </div>
+    <p class="section-desc">Building immersive 3D experiences for Meta Quest hardware in Unity. My focus is spatial: real depth, real physics, real presence. Not 2D UI ports into headsets.</p>
+    <div class="vr-split">
+      <div class="vr-left">
+        <div class="vr-stat-block">
+          <div class="vr-stat-num" data-final="3">0</div>
+          <div class="vr-stat-label">PLATFORMS</div>
+          <div class="vr-stat-sub">Quest 2 · Quest 3 · Quest Pro</div>
+        </div>
+        <div class="vr-stack">
+          <div class="vr-stack-item">
+            <span class="vsr-key">SDK</span>
+            <span>Meta XR SDK · OpenXR · Android ARM64</span>
+          </div>
+          <div class="vr-stack-item">
+            <span class="vsr-key">TOOLKIT</span>
+            <span>Unity XR Interaction Toolkit</span>
+          </div>
+          <div class="vr-stack-item">
+            <span class="vsr-key">RENDERING</span>
+            <span>Single-Pass Instanced · ASTC · GPU Instancing</span>
+          </div>
+          <div class="vr-stack-item">
+            <span class="vsr-key">FRAME RATE</span>
+            <span>72 / 90 / 120 Hz Target · Adaptive Resolution</span>
+          </div>
+        </div>
+      </div>
+      <div class="vr-right">
+        <div class="vr-card">
+          <div class="vr-card-num">A</div>
+          <h3>3D Scene Architecture</h3>
+          <p>Full 3D spatial scene design. Occlusion culling, LOD groups, and draw call batching tuned for standalone headset GPU budgets.</p>
+        </div>
+        <div class="vr-card">
+          <div class="vr-card-num">B</div>
+          <h3>Interaction Design</h3>
+          <p>Controller and hand tracking both supported. Physics-driven object manipulation, spatial UI in 3D world space, grab interaction systems.</p>
+        </div>
+        <div class="vr-card">
+          <div class="vr-card-num">C</div>
+          <h3>Locomotion Systems</h3>
+          <p>Teleportation, smooth locomotion, snap turn, comfort vignette. Per-user configurable with persistent preference storage.</p>
+        </div>
+        <div class="vr-card">
+          <div class="vr-card-num">D</div>
+          <h3>Passthrough / Mixed Reality</h3>
+          <p>Meta Passthrough API for MR mode on Quest 3. Blending real-world video with Unity 3D content for anchored spatial experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" data-section="06 EXPERIENCE">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2>Experience</h2>
+    </div>
+    <p class="section-desc">Volunteer roles across game development studios, real systems, real teams, real shipping. Actively seeking paid employment, open to part-time while in school.</p>
+    <div class="exp-list">
+      <div class="exp-item reveal">
+        <div class="exp-left">
+          <div class="exp-period">2024 · PRESENT</div>
+          <div class="exp-badge current">CURRENT</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-company">Northline Game</div>
+          <div class="exp-role">Project Manager</div>
+          <p class="exp-desc">Leading project planning and team coordination for an indie game studio. Sprint management, milestone tracking, cross-discipline communication, and delivery timeline ownership. Primary point of contact across developers, artists, and designers.</p>
+          <div class="exp-tags">
+            <span>Agile</span><span>Sprint Planning</span><span>Leadership</span><span>Cross-team</span>
+          </div>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="exp-left">
+          <div class="exp-period">2024 · PRESENT</div>
+          <div class="exp-badge current">CURRENT</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-company">Interio Games</div>
+          <div class="exp-role">API Lead Developer · Networking Leadership</div>
+          <p class="exp-desc">Dual role | leading the API development team building game backend infrastructure in TypeScript with Supabase, while holding a networking leadership position overseeing cross-team communication and external partnerships. Designing scalable player data, auth, and leaderboard systems.</p>
+          <div class="exp-tags">
+            <span>TypeScript</span><span>Supabase</span><span>REST APIs</span><span>Team Lead</span>
+          </div>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="exp-left">
+          <div class="exp-period">PREVIOUS</div>
+          <div class="exp-badge past">PAST</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-company">Lunar Sky Studios</div>
+          <div class="exp-role">Developer</div>
+          <p class="exp-desc">Unity development role contributing to gameplay systems, level design, and technical implementation as part of a small cross-functional game dev team.</p>
+          <div class="exp-tags"><span>Unity</span><span>C#</span><span>Level Design</span></div>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="exp-left">
+          <div class="exp-period">PREVIOUS</div>
+          <div class="exp-badge past">PAST</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-company">Ether Rift</div>
+          <div class="exp-role">Developer</div>
+          <p class="exp-desc">Unity developer working on gameplay mechanics and core systems. Contributed to foundational architecture and feature implementation.</p>
+          <div class="exp-tags"><span>Unity</span><span>C#</span><span>Systems Design</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-section="07 CONTACT">
+    <div class="contact-inner">
+      <div class="section-header" style="justify-content:center">
+        <span class="section-num">07</span>
+        <h2>Get In Touch</h2>
+      </div>
+      <p class="contact-desc">Looking for paid roles, part-time. If you are building something in Unity, need a game backend, want a VR developer, or need someone who can work across the whole stack, reach out.</p>
+      <div class="contact-availability">
+        <div class="avail-item">
+          <div class="avail-dot green-dot"></div>
+          <span>Open to work</span>
+        </div>
+        <div class="avail-item">
+          <div class="avail-dot green-dot"></div>
+          <span>Part-time available</span>
+        </div>
+        <div class="avail-item">
+          <div class="avail-dot cyan-dot"></div>
+          <span>Contract / freelance</span>
+        </div>
+        <div class="avail-item">
+          <div class="avail-dot cyan-dot"></div>
+          <span>Remote preferred</span>
+        </div>
+      </div>
+      <a class="discord-btn" href="https://discord.com/users/nl.account" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+        DISCORD · nl.account
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/csharp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/typescript.min.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
